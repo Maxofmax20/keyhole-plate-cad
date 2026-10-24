@@ -36,3 +36,11 @@
 ## Re-render on the VPS
 
 Blender runs in a self-contained Docker image to avoid changing existing hosted services; project files live in `/data/keyhole-plate-blender`. Use the included `Dockerfile` to rebuild the local renderer if needed.
+
+## v0.2 revision (October 2026)
+
+**Use the v0.2 files for your first printed sample, NOT the original v0.1 STLs.** The v0.1 male button had three disconnected shells. v0.2 combines them into a single closed solid, adds an M3 screw through-hole and head recess, and adds an optional transverse anti-lift retainer path to the female piece. Both v0.2 STL meshes have a single connected shell and zero non-manifold edges. Boolean virtual fit checks report no intersection during sliding; this is NOT physical load certification.
+
+Details, recommended print orientations/supports, and remaining safety tests: [PRINT_AND_QA_v02.md](PRINT_AND_QA_v02.md).
+
+Run `bash qa_v02.sh` on the VPS to reproduce the automated mesh and collision checks.
