@@ -44,3 +44,9 @@ Blender runs in a self-contained Docker image to avoid changing existing hosted 
 Details, recommended print orientations/supports, and remaining safety tests: [PRINT_AND_QA_v02.md](PRINT_AND_QA_v02.md).
 
 Run `bash qa_v02.sh` on the VPS to reproduce the automated mesh and collision checks.
+
+## v0.3 — round screw-mounted alternative (ISO 7380-1 M4)
+
+Added a **round Ø28 mm** male button with a recessed **M4 ISO 7380-1** hex socket button-head screw interface. It fits the **unchanged `female_keyhole_plate_v02.stl`**; no tape is required to mount the new male flange to a compatible *M4 threaded* point, but the original female plate still uses its original attachment method.
+
+See [v0.3 standard screw specification, digital QA and print guide](ROUND_M4_V03.md). Download `male_round_button_M4_v03.stl` for an **initial fit-test print**, not road use. Compatible metal screw and a safe secondary anti-lift measure must be confirmed on the target vehicle. This does not claim to fit all license plate screws, which vary by vehicle.
